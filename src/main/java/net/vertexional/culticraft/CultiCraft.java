@@ -24,7 +24,7 @@ public class CultiCraft {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
+        ModCreativeModeTab.load();
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
     }
