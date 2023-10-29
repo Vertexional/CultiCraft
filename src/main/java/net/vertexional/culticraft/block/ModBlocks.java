@@ -21,7 +21,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, CultiCraft.MOD_ID);
 
     public static final RegistryObject<Block> PILL_TABLE = registerBlock("pill_table",
-            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)), ModCreativeModeTab.CULTICRAFT_TAB);
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(2.5f)), ModCreativeModeTab.CULTICRAFT_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
