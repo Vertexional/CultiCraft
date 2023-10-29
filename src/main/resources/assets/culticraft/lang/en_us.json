@@ -1,3 +1,7 @@
 {
-  "item.culticraft.basic_pill": "Basic Pill"
+  "item.culticraft.basic_pill": "Basic Pill",
+
+  "block.culticradt.pill_table": "Pill Table",
+
+  "itemGroup.culticrafttab": "CultiCraft Items & Blocks"
 }
