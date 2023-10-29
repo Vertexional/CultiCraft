@@ -11,6 +11,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.vertexional.culticraft.block.ModBlocks;
+import net.vertexional.culticraft.item.ModCreativeModeTab;
 import net.vertexional.culticraft.item.ModItems;
 import org.slf4j.Logger;
 
@@ -24,7 +25,7 @@ public class CultiCraft {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
+        ModCreativeModeTab.load();
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
     }

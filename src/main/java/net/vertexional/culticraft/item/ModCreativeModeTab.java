@@ -4,10 +4,23 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
 public class ModCreativeModeTab {
-    public static final CreativeModeTab CULTICRAFT_TAB = new CreativeModeTab("culticrafttab") {
-        @Override
-        public ItemStack makeIcon() {
-            return new ItemStack(ModItems.BASIC_PILL.get());
-        }
-    };
+
+    public static CreativeModeTab CULTICRAFT_TAB;
+
+    public static void load() {
+
+        CULTICRAFT_TAB = new CreativeModeTab("culticrafttab") {
+            @Override
+            public ItemStack makeIcon() {
+                return new ItemStack(ModItems.BASIC_PILL.get());
+            }
+
+            @Override
+            public boolean hasSearchBar() {
+                return false;
+            }
+        };
+
+
+    }
 }
